@@ -34,7 +34,7 @@ function test(onHand:number, pending:number, requested:number, expected:boolean 
     const result = canFill(onHand, pending, requested);
     console.log(`canFill succeeded? ${result===expected}`);
   } catch (error) {
-    console.log(`canFill erred correctly? ${error === expected}`);
+    console.log(`canFill erred correctly? ${error.message === expected}`);
   }
 }
 
